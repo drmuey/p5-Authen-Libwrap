@@ -237,7 +237,6 @@ sub hosts_ctl
     my $user;
     
     # next arg could be a literal hostname or a socket or a glob
-    no warnings 'uninitialized';
     if( Scalar::Util::reftype  $_[0]  eq 'IO'     ||
         Scalar::Util::reftype  $_[0]  eq 'GLOB'   ||
         Scalar::Util::reftype \$_[0]  eq 'GLOB' )
@@ -280,8 +279,8 @@ sub hosts_ctl
     else {
         
         # must be a hostname then ip addr
-        $hostname = shift;
-        $ip_addr = shift;
+        $hostname = shift || STRING_UNKNOWN;
+        $ip_addr = shift || STRING_UNKNOWN;
         
     }
 
