@@ -72,7 +72,7 @@ Module::Build->new(
 
     module_name          => 'Authen::Libwrap',
 
-    dist_version         => '0.22',
+    dist_version         => '0.23',
 
     license              => 'perl',
     

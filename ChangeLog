@@ -1,6 +1,6 @@
 Revision history for Perl extension Authen::Libwrap.
 
-0.23    …
+0.23    Mon Nov 14 08:37:06 2016
 	- Add github URL to bug POD.
         - thanks BDRACO: Avoid no warnings as it creates a cop_warnings for every cop in the scope
 
