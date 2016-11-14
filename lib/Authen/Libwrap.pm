@@ -337,7 +337,10 @@ everything the module has to offer.
 
  STRING_UNKNOWN
 
-=head1 BUGS
+=head1 BUGS AND FEATURES
+
+Please report any bugs or feature requests (and a pull request for bonus points)
+ through the issue tracker at L<https://github.com/drmuey/p5-Authen-Libwrap/issues>.
 
 =over 4
 
