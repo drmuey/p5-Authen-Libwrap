@@ -249,9 +249,6 @@ sub hosts_ctl
         };
         Carp::croak "can't get peer address from socket" if $@;
         
-        # get the IP addr
-        $ip_addr = Socket::inet_ntoa($peer) || STRING_UNKNOWN;
-
         if( $peer ) {
             
             # get IP address or set to unknown
